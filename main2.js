@@ -1,0 +1,1 @@
+document.write('<h2>I come from main2.js</h2>');
