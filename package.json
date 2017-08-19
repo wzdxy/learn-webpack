@@ -1,25 +1,30 @@
 {
-  "name": "webpack-test",
+  "name": "webpackTest3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
-  "dependencies": {
-    "webpack": "^2.3.1",
-    "css-loader": "^0.27.3",
-    "style-loader": "^0.16.0"
-  },
-  "devDependencies": {},
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "server": "node server.js",
+    "build:dev": "webpack --env=dev --progress --profile --colors",
+    "build:dist": "webpack --env=prod --progress --profile --colors"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wzdxy/learn-webpack.git"
-  },
-  "author": "zc",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wzdxy/learn-webpack/issues"
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.5",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
   },
-  "homepage": "https://github.com/wzdxy/learn-webpack#readme"
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
 }

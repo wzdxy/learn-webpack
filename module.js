@@ -1,1 +1,0 @@
-module.exports='HEHEH,Yes, it works from module.js;'
